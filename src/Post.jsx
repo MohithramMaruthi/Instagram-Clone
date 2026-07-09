@@ -46,7 +46,7 @@ function Post() {
     }
 
     const getPosts = () => {
-    fetch("http://localhost:3000/posts")
+    fetch("https://instagram-backend-vtkk.onrender.com/posts")
     .then(res=>res.json())
     .then(data=>setPosts(data));
 }

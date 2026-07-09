@@ -18,7 +18,7 @@ function Comment({ post, refresh }) {
             ]
         };
         await axios.put(
-            `http://localhost:3000/posts/${post.id}`,
+            `https://instagram-backend-vtkk.onrender.com/posts/${post.id}`,
             updatedPost
         );
         setText("");
@@ -31,7 +31,7 @@ function Comment({ post, refresh }) {
             comments: post.comments.filter(c => c.id !== id)
         };
         await axios.put(
-            `http://localhost:3000/posts/${post.id}`,
+            `https://instagram-backend-vtkk.onrender.com/posts/${post.id}`,
             updatedPost
         );
         refresh();

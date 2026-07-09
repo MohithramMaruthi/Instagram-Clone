@@ -17,7 +17,7 @@ function CreatePost() {
         const post = {
             user: {
                 username: "mohith",
-                profile_pic: "src/assets/profile.jpg"
+                "profile_pic" : "/images/profile.jpg"
             },
             image: image,
             caption: caption,
@@ -26,7 +26,7 @@ function CreatePost() {
         };
 
         await axios.post(
-            "http://localhost:3000/posts",
+            "https://instagram-backend-vtkk.onrender.com/posts",
             post
         );
 
